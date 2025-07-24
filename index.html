@@ -2,24 +2,387 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vajrapu Tejaswi | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vajrapu Tejaswi Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="achievements.html">Achievements</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <header>
-    <h1>Vajrapu Tejaswi</h1>
-    <p>Computer Science Student | Passionate about Software Development and Data Science</p>
-    <a href="Resume_tejaswi.pdf" download>Download Resume</a>
+
+ <nav class="navbar">
+  <button class="menu-toggle" id="menuToggle">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#internship" class="nav-link">Internship</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#education" class="nav-link">Education</a></li>
+    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+    <li><a href="#interests" class="nav-link">Interests</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+
+  </ul>
+</nav>
+
+
+
+  <!-- 👤 Header -->
+  <header id="home">
+    <h1 class="glass-effect-title">Vajrapu tejaswi</h1><br><br>
+    <p class="typewriter">B.Tech Final Year Student (IT) | Full Stack Developer | Data Science Enthusiast</p>
   </header>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Final-year B. Tech Information Technology student with hands-on experience developing full-stack web applications 
+using the MERN stack. Skilled in building responsive front-end interfaces, designing RESTful APIs, and integrating 
+MongoDB and MySQL databases. Completed multiple personal and academic projects involving authentication, 
+CRUD operations, and real-time deployment. Proficient in Git, version control, and writing clean, modular code.</p>
+    </section>
+
+   <section id="internship">
+  <h2>Internships</h2>
+
+  <div class="internship-grid">
+
+    <div class="internship">
+      <h3>RINL – Vizag Steel Plant</h3>
+      <p><strong>Duration:</strong> May–June 2025</p>
+      <ul>
+        <li>YOLOv5 model for PPE detection</li>
+        <li>Django web app for live monitoring</li>
+        <li>Deployed on Render for real-time alerts</li>
+      </ul>
+      <a href="https://ppe-django.onrender.com/" target="_blank" class="btn">View Certificate</a>
+    </div>
+
+    <div class="internship">
+      <h3>Salesforce Developer – Smart InternZ</h3>
+      <p><strong>Duration:</strong> Jan 2024</p>
+      <ul>
+        <li>Virtual internship as Salesforce developer</li>
+        <li>Worked on Salesforce CRM workflows</li>
+      </ul>
+      <a href="https://drive.google.com/file/d/1LHn3B_munBZCEf9k8DWzms5YPaRPvOQb/view" target="_blank" class="btn">View Certificate</a>
+    </div>
+
+    <div class="internship">
+      <h3>Android Dev – GDSC MVGR</h3>
+      <p><strong>Duration:</strong> Oct 2023</p>
+      <ul>
+        <li>Built apps with Java & XML</li>
+        <li>Explored UI design and activity lifecycle</li>
+      </ul>
+      <a href="https://drive.google.com/file/d/1MVWw12w5jXSBeKGela6dsGrWlmYb7KmB/view" target="_blank" class="btn">View Certificate</a>
+    </div>
+
+  </div>
+</section>
+
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>E-Learning Platform</h3>
+          <p>Full stack platform with courses, filters, admin dashboard</p>
+          <a href="https://github.com/vajraputejaswi/e-learning-platform" target="_blank">GitHub</a>
+        </div>
+        <div class="project">
+          <h3>PPE Detection with ML</h3>
+          <p>Django app with YOLOv5 for safety compliance</p>
+          <a href="https://ppe-django.onrender.com/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </section>
+
+   <section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+
+    <div class="skill-category">
+      <h3><i class="fas fa-code"></i> Programming Languages</h3>
+      <ul>
+        <li><i class="fab fa-js"></i> JavaScript</li>
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fab fa-java"></i> Java</li>
+        <li><i class="fas fa-c"></i> C</li>
+        <li><i class="fas fa-c"></i><sup>++</sup> C++</li>
+        <li><i class="fas fa-chart-line"></i> R</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+      <ul>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+        <li><i class="fab fa-node-js"></i> Node.js</li>
+        <li><i class="fas fa-server"></i> Express.js</li>
+        <li><i class="fas fa-code"></i> RESTful APIs</li>
+        <li><i class="fas fa-file-code"></i> JSON</li>
+        <li><i class="fas fa-lock"></i> Session Management</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3><i class="fas fa-database"></i> Database</h3>
+      <ul>
+        <li><i class="fas fa-database"></i> MongoDB</li>
+        <li><i class="fas fa-compass"></i> MongoDB Compass</li>
+        <li><i class="fas fa-database"></i> MySQL</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+      <ul>
+        <li><i class="fab fa-git-alt"></i> Git</li>
+        <li><i class="fab fa-github"></i> GitHub</li>
+        <li><i class="fas fa-paper-plane"></i> Postman</li>
+        <li><i class="fas fa-code"></i> VS Code</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3><i class="fas fa-chart-bar"></i> Data Tools</h3>
+      <ul>
+        <li><i class="fas fa-table"></i> Pandas</li>
+        <li><i class="fas fa-cubes"></i> NumPy</li>
+        <li><i class="fas fa-brain"></i> Scikit-learn</li>
+        <li><i class="fas fa-chart-pie"></i> Power BI</li>
+        <li><i class="fas fa-project-diagram"></i> Kaggle</li>
+        <li><i class="fas fa-cloud"></i> Google Colab</li>
+        <li><i class="fas fa-file-excel"></i> Excel</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <section id="education">
+  <h2>My Education</h2>
+  <div class="education-container">
+
+    <div class="education-card">
+      <h3>B.Tech in Information Technology</h3>
+      <p><strong>MVGR College of Engineering</strong> (2022–2026)</p>
+      <p><strong>CGPA:</strong> 8.35</p>
+    </div>
+
+    <div class="education-card">
+      <h3>Intermediate (MPC)</h3>
+      <p><strong>NRI Junior College</strong> (2020–2022)</p>
+      <p><strong>Percentage:</strong> 94.8%</p>
+    </div>
+
+    <div class="education-card">
+      <h3>10th Grade (SSC)</h3>
+      <p><strong>A.P. Model School</strong> (2019–2020)</p>
+      <p><strong>Percentage:</strong> 96.6%</p>
+    </div>
+
+  </div>
+</section>
+
+
+    <section id="certifications">
+  <h2>Certifications</h2>
+  <div class="certification-list">
+
+    <div class="certification-card">
+      <h3>Tech Stack Program – EDYGRAD</h3>
+      <p>Completed full-stack development program with hands-on project experience.</p>
+      <a href="#" target="_blank" class="btn">View Certificate</a>
+    </div>
+
+    <div class="certification-card">
+      <h3>Salesforce Internship – Smart InternZ</h3>
+      <p>Worked with Salesforce tools to build CRM workflows and automation.</p>
+      <a href="#" target="_blank" class="btn">View Certificate</a>
+    </div>
+
+    <div class="certification-card">
+      <h3>Android App Dev – GDSC</h3>
+      <p>Built native Android apps using Java, explored UI design and activities.</p>
+      <a href="#" target="_blank" class="btn">View Certificate</a>
+    </div>
+
+    <div class="certification-card">
+      <h3>Networking – CISCO</h3>
+      <p>Understood routing, switching, and basic network protocols through Cisco NetAcad.</p>
+      <a href="#" target="_blank" class="btn">View Certificate</a>
+    </div>
+
+  </div>
+</section>
+
+
+    <section id="interests">
+  <h2>Interests</h2>
+  <div class="interests-grid">
+    <div class="interest-card">
+      <i class="fas fa-brain"></i>
+      <span>Machine Learning</span>
+    </div>
+    <div class="interest-card">
+      <i class="fas fa-code"></i>
+      <span>Full Stack Development</span>
+    </div>
+    <div class="interest-card">
+      <i class="fas fa-globe"></i>
+      <span>Open Source</span>
+    </div>
+    <div class="interest-card">
+      <i class="fas fa-users"></i>
+      <span>Community Building</span>
+    </div>
+    <div class="interest-card">
+      <i class="fas fa-users"></i>
+      <span>Data Science</span>
+    </div>
+    
+  </div>
+</section>
+
+
+    <section id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-wrapper">
+
+    <!-- Contact Form on the Left -->
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Socials on the Right -->
+    <div class="contact-socials">
+      <a href="https://github.com/vajraputejaswi" target="_blank" title="GitHub">
+        <i class="fab fa-github" style="color:black"></i> GitHub
+      </a><br>
+      <a href="https://linkedin.com/in/vajraputejaswi" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      
+    </div>
+
+  </div>
+</section>
+
+
+
+  </div>
+
+  <footer>
+    <p>© 2025 Tejaswi Vajrapu</p>
+    <div class="footer-socials">
+      <a href="https://github.com/vajraputejaswi" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/vajraputejaswi" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:vajraputejaswi@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </footer>
+  <button id="scrollTopBtn" title="Back to Top">↑</button>
+
+ <script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link"); // selects <a> tags
+  const navList = document.getElementById("navLinks"); // selects <ul>
+  const menuToggle = document.getElementById("menuToggle");
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  // Scroll Spy for Nav Active Link
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 150;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+
+    sections.forEach((section) => {
+      section.classList.remove("active-section");
+      if (section.getAttribute("id") === current) {
+        section.classList.add("active-section");
+      }
+    });
+
+    // Show scroll to top button
+    scrollBtn.style.display = scrollY > 300 ? "flex" : "none";
+  });
+
+  // Animate Sections on Intersection
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach((section) => observer.observe(section));
+
+  // Scroll to top button
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Mobile menu toggle
+  menuToggle.addEventListener("click", () => {
+    navList.classList.toggle("show");
+  });
+
+  // Close sidebar when clicking outside on mobile
+  document.addEventListener("click", function (e) {
+    if (navList.classList.contains("show") &&
+        !navList.contains(e.target) &&
+        !menuToggle.contains(e.target)) {
+      navList.classList.remove("show");
+    }
+  });
+
+  // Scroll to section on link click (smooth)
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navList.classList.remove("show");
+    });
+  });
+
+  // Trigger scroll on page load
+  document.addEventListener("DOMContentLoaded", () => {
+    window.dispatchEvent(new Event("scroll"));
+  });
+</script>
+
+
 </body>
 </html>
